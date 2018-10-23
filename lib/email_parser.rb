@@ -4,11 +4,11 @@
 # or whitespace (' ').
 class EmailParser
   attr_accessor :emails_to_be_parsed
-  
+
   def initialize(emails)
     @emails_to_be_parsed = emails
   end
-  
+
   def parse
     @emails.gsub(",", "").split(" ")
   end
