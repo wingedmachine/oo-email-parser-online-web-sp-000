@@ -10,6 +10,6 @@ class EmailParser
   end
 
   def parse
-    @emails.gsub(",", "").split(" ")
+    @emails_to_be_parsed.gsub(",", "").split(" ")
   end
 end
